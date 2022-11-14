@@ -22,7 +22,7 @@ const SearchBar=()=>{
   
     useEffect(()=>{
       setCity(weatherData.name)
-    },[])
+    },[weatherData])
     return (
         <>
           <Paper

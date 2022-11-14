@@ -21,8 +21,8 @@ const WeatherCard=({data,eventChange})=>{
                 }} onClick={()=>{eventChange(date)}}
               >
               <h5 style={InnerItem}>{day}</h5>
-              <span style={InnerItem}>{Math.round(data.temp.day)}<sup>o</sup> C</span>
-              <span style={InnerItem}>{Math.round(data.temp.day)}<sup>o</sup> C</span>
+              <span style={InnerItem}>{Math.round(data.temp.max)}<sup>o</sup> C</span>
+              <span style={InnerItem}>{Math.round(data.temp.min)}<sup>o</sup> C</span>
               <div style={InnerItem}>{data.weather[0].main==='Clouds'?<CloudIcon/>:<WbSunnyIcon/>}</div>
               <h5 style={InnerItem}>{data.weather[0].main}</h5>
               </Paper>
